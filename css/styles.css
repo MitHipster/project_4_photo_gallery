@@ -8,6 +8,7 @@
 
 body {
   color: #2b2b2b;
+  background-color: #afbbc2;
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
   line-height: 1.4;
@@ -20,16 +21,14 @@ nav {
 h1,
 h2,
 h4,
+hr,
 figcaption {
   margin: 0;
 }
 
 figure {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   font-family: 'Montserrat', cursive;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 a {
@@ -39,8 +38,17 @@ a {
   text-align: right;
 }
 
+h2 {
+  font-size: 1.4rem;
+}
+h2,
+figcaption {
+  padding: 8px 12px;
+}
+
 figcaption {
   font-family: 'Lato', sans-serif;
+  color: #696969;
   align-self: stretch;
 }
 
@@ -69,7 +77,31 @@ footer {
 }
 
 .photo-gallery-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 90%;
+  height: 200px;
+  background-color:#f9f9f9;
+  box-shadow: 0 0 20px rgba(25, 47, 65, 0.5);
+}
+
+.photo-gallery-img a img {
+  transition: transform .3s, box-shadow .3s;
+}
+
+.photo-gallery-img a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(25, 47, 65, 0.5);
+}
+
+.photo-gallery-desc {
+  height: 200px;
+  overflow: scroll;
+}
+
+.photo-gallery-img:nth-child(even) {
+  justify-content: flex-start;
 }
 
 .photo-gallery-img:nth-child(odd) a {
@@ -79,14 +111,31 @@ footer {
 
 /* ------- Page Elements ------- */
 
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(43, 43, 43, 0), rgba(43, 43, 43, 0.75), rgba(43, 43, 43, 0));
+}
 
 
 /* ================================
     Media Queries
    ================================ */
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 520px) {
   
+  h2 {
+  font-size: 1.5rem;
+  }
+  
+  h2,
+  figcaption {
+    padding: 12px 20px;
+  }
+  
+  .photo-gallery-img a img:hover {
+    transform: scale(1.1);
+  }
   
 }
 
