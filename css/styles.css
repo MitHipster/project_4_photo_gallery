@@ -56,11 +56,22 @@ figcaption {
 
 header,
 footer {
-  padding: 0 5%;
+  background-color: #405663;
+  color: #f5f5f5;
+  padding: 30px 6%;
+}
+
+header {
+  margin-bottom: 50px;
+  border-bottom: 20px solid #2F3F49;
+  box-shadow: 0 2px 10px 0 #2F3F49;
 }
 
 footer {
   text-align: right;
+  margin-top: 100px;
+  border-top: 20px solid #2F3F49;
+  box-shadow: 0 -2px 10px 0 #2F3F49;
 }
 
 /* ================================
@@ -78,7 +89,7 @@ nav {
 #search,
 #search-btn {
   border: none;
-  margin: 30px 0 50px;
+  margin: 25px 0 75px;
   padding: 12px 20px;
   box-shadow: 0 0 8px rgba(25, 47, 65, 0.5);
 }
@@ -91,7 +102,7 @@ nav {
 }
 
 #search-btn {
-  background-color: #0d505e;
+  background-color: #405663;
   transition: opacity .5s;
 }
 
