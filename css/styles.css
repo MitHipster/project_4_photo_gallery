@@ -234,13 +234,12 @@ hr {
   
 }
 
-/* ================================
-    Print Styles
-   ================================ */
-
-@media print {
-
-    
+@media (min-width: 1025px) {
+  
+  #photo-gallery {
+    max-width: 990px;
+  }
+  
 }
 
 
