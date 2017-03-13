@@ -277,7 +277,8 @@ hr {
   #photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    max-width: 793px;
+    min-width: 721px;
+    max-width: 769px;
     margin: 0 auto;
   }
   
@@ -311,7 +312,8 @@ hr {
 @media (min-width: 1025px) {
   
   #photo-gallery {
-    max-width: 990px;
+    min-width: 990px;
+    max-width: 1025px;
   }
   
 }
