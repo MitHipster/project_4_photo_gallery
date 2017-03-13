@@ -3,7 +3,8 @@
 
 $(document).ready( function () {
   const searchField = $('#search'); // Search input field
-  const searchMessage = $('#search-count'); // Element to display number of matches message
+  const searchMessage = $('<h5></h5>'); // Element to display number of matched images
+  const searchMessageParent = $('header'); // Parent container for searchMessage
   const searchButton = $('#search-btn'); // Button to clear search term
   const photoGalleryLink = $('.photo-gallery-img a'); // Photo gallery links
   const imageTotal = photoGalleryLink.length; // Total number of photos
@@ -16,6 +17,9 @@ $(document).ready( function () {
     if (searchCount === -1) {
       // All images are being displayed at page load
       imagesShown = imageTotal;
+      //Create element to hold message
+      searchMessageParent.append(searchMessage);
+      console.log(searchMessageParent.children());
     } else if (searchCount > 0) {
       // x of y images showing based on search result
       imagesShown = searchCount;
