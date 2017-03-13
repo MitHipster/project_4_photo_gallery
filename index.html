@@ -15,11 +15,12 @@
     
     <header>
       <h1>travelJOURNAL</h1>
+      <h5 id="search-count"></h5>
     </header>
     
     <nav>
-      <input type="search" id="search" name="search" placeholder="Search">
-      <button type="button" id="search-btn"><img src="img/search.svg" alt="Search button"></button>
+      <input type="search" id="search" name="search" placeholder="Caption search">
+      <button type="button" id="search-btn">X</button>
     </nav>
     
     <section id="photo-gallery">
@@ -130,6 +131,7 @@
   <script>
     lightbox.option({
       'maxWidth': 900,
+      'fadeDuration': 500,
       'imageFadeDuration': 500,
       'disableScrolling': true,
       'wrapAround': true
