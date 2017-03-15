@@ -38,14 +38,14 @@ $(document).ready( function () {
     // Loop through each photo gallery image link
     photoGalleryLink.each( function () {
       // If the data title does not contain the search term, fade out its parent container
-      if ($(this).attr("data-title").search(new RegExp(searchTerm, "i")) < 0) {
+      if ($(this).attr("data-fresco-caption").search(new RegExp(searchTerm, "i")) < 0) {
           $(this).parent().fadeOut(400);
-//          $(this).attr("data-lightbox", "");
+          $(this).attr("data-fresco-group", "");
 
       // Show parent container if the search term matches and increase the match by 1
       } else {
           $(this).parent().fadeIn(400);
-//          $(this).attr("data-lightbox", "travels");
+          $(this).attr("data-fresco-group", "travels");
           searchCount++;
       }
     });
