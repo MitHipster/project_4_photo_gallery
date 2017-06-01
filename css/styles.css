@@ -232,7 +232,6 @@ div.fr-position-background {
 
   .photo-gallery-desc {
     height: 200px;
-    overflow: scroll;
   }
   
   .photo-gallery-desc figcaption {
